@@ -10,6 +10,8 @@ export class DiretivasEstruturaisComponent implements OnInit {
   public condition: boolean = true;
   public conditionClick: boolean = true;
 
+  public nome: string = "ariana"
+
   constructor() {}
 
 
@@ -22,4 +24,5 @@ export class DiretivasEstruturaisComponent implements OnInit {
     }
   })  
   }
+
 }

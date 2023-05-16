@@ -1,1 +1,20 @@
 <p>diretivas-estruturais works!</p>
+
+<input type="text" [(ngModel)]="nome">
+
+<div [ngSwitch]="nome">
+    <p *ngSwitchCase="carlitos">
+        Carlos Tavares
+    </p>
+
+    <p *ngSwitchCase="ariana">
+        Ariana Grande
+    </p>
+
+    <p *ngSwitchDefault>
+        Conhece uma diva pop?? Acho que não.
+    </p>
+</div>
+
+<hr>
+
