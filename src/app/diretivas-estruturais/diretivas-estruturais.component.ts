@@ -11,11 +11,14 @@ export class DiretivasEstruturaisComponent implements OnInit {
   public conditionClick: boolean = true;
 
   public nome: string = "ariana"
+  public carlitos: string = "Carlos Tavares"
+  public ariana: string = "Ariana Grande"
 
   constructor() {}
 
 
   ngOnInit(): void {
+
   setInterval(()=>{
     if (this.condition){
       this.condition = false;
@@ -23,6 +26,7 @@ export class DiretivasEstruturaisComponent implements OnInit {
       this.condition = true;
     }
   })  
+  
   }
 
 }
