@@ -1,4 +1,13 @@
-<p [ngClass]="{'active': valor, 'disabled': !valor}">diretivas-atributos ngClass works!</p>
+
+<div *ngIf="nome != 'Ariana Grande' ">
+    <p [ngClass]="{'active': valor, 'disabled': !valor}">ngClass works!</p>
+    
+    <p [ngStyle]="{'height': heightA, 'background': backcolor }">NgStyle works!</p>
+</div>
+    
 <hr>
 
-<p [ngStyle]="{'height': height, 'backgroudcolor': backcolor }">NgStyle works!</p>
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{item.nome}} </li>

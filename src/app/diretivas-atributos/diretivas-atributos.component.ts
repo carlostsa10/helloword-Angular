@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasAtributosComponent implements OnInit {
 
-  public height:string = "20px"
+  public heightA:string = "20px"
 
   public valor: boolean = true;
-  public backcolor: string = "dimgray"
+  public backcolor: string = "dimgray";
+
+  public nome: string = ""
+  public list: Array <{nome: string}> = [];
 
   constructor() {}
 
@@ -27,16 +30,20 @@ export class DiretivasAtributosComponent implements OnInit {
   }, 2000)  
 
   setInterval(()=>{
-  if (this.height == "20px"){
-  this.height = "45px"
+  if (this.heightA == "20px"){
+  this.heightA = "45px"
   this.backcolor = "violet"
 
     } else {
-  this.height = "20px"
+  this.heightA = "20px"
   this.backcolor = "dimgray"
 
   }
   }, 2500)
-  
+  }
+
+  public salvar(){
+    this.list.push({nome: this.nome})
+    this.nome = ""
   }
 }
