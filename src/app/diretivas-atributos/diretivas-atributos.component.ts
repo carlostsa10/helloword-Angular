@@ -19,6 +19,18 @@ export class DiretivasAtributosComponent implements OnInit {
 
 
   ngOnInit(): void {
+    setInterval(()=>{
+    if (this.heightA == "20px"){
+    this.heightA = "45px"
+    this.backcolor = "violet"
+  
+      } else {
+    this.heightA = "20px"
+    this.backcolor = "dimgray"
+  
+    }
+    }, 3500)
+    
 
   setInterval(()=>{
     if (this.valor){
@@ -27,23 +39,15 @@ export class DiretivasAtributosComponent implements OnInit {
     } else{
       this.valor = true;
     }
-  }, 2000)  
+  }, 3500);  
+}
 
-  setInterval(()=>{
-  if (this.heightA == "20px"){
-  this.heightA = "45px"
-  this.backcolor = "violet"
-
-    } else {
-  this.heightA = "20px"
-  this.backcolor = "dimgray"
-
-  }
-  }, 2500)
-  }
 
   public salvar(){
     this.list.push({nome: this.nome})
     this.nome = ""
   }
+
+
 }
+
