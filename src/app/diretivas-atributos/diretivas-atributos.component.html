@@ -1,3 +1,4 @@
+<ng-content select="h3"></ng-content>
 
 <div *ngIf="nome != 'Carlos Tavares' ">
     <p [ngClass]="{'active': valor, 'disabled': !valor}">ngClass works!</p>
@@ -16,9 +17,14 @@
 
 <ng-template ngFor let-item [ngForOf]="list">
     <p>
+        Utilizando ng-template
         {{item.nome}}
     </p>
 </ng-template>
 
 <input [(ngModel)]="nome">
 <button (click)="salvar()">Salvar</button>
+
+<hr>
+
+<ng-content select="h1"></ng-content>
