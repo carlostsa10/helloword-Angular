@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasAtributosComponent implements OnInit {
 
-  public heightA:string = "20px"
+  public heightA:string = "30px"
 
   public valor: boolean = true;
-  public backcolor: string = "dimgray";
+  public backcolor: string = "black";
 
   public nome: string = ""
   public list: Array <{nome: string}> = [{nome: "Ariana Grande"}];
